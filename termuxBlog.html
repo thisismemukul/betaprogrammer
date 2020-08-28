@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
     
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
     
 
 </head> 
@@ -75,37 +75,42 @@
 	    <article class="blog-post px-3 py-5 p-md-5">
 		    <div class="container">
 			    <header class="blog-post-header">
-					<h2 class="title mb-2">Why Every Developer Should Have A Blog</h2>
+					<h2 class="title mb-2">How to Customize Termux, Make Termux terminal look Awesome – ANCII, Color, Font, Style</h2>
 				</header>
 			    
 			    <div class="blog-post-body">
 				    <figure class="blog-banner">
-				        <a href="https://made4dev.com"><img class="img-fluid" src="assets/images/blog/blog-post-banner.jpg" alt="image"></a>				    </figure>
-				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
-				    
-				    <h3 class="mt-5 mb-3">Code Block Example</h3>
-				    <p>You can get more info at <a href="https://highlightjs.org/" target="_blank">https://highlightjs.org/</a>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
-				    <pre>
-					    <code>
-function $initHighlight(block, cls) {
-  try {
-    if (cls.search(/\bno\-highlight\b/) != -1)
-      return process(block, true, 0x0F) +
-             ` class="${cls}"`;
-  } catch (e) {
-    /* handle exception */
-  }
-  for (var i = 0 / 2; i < classes.length; i++) {
-    if (checkCondition(classes[i]) === undefined)
-      console.log('undefined');
-  }
-}
+						<img class="img-fluid" src="assets/images/Blog/termux-awesome-look-cool.png" alt="image">				    
+					</figure>
+				    <p>First of all, we have to remove the text that comes in the Welcome screen of Termux. As you open the Termux App, something like this already written.</p>
+					<img class="img-fluid" src="assets/images/Blog/termux-welcome-screen.jpg" alt="image">
+					<h3 class="mt-5 mb-3">How to Remove termux Welcome screen Text</h3>
+					<p>Open Termux app and type-</p>
+					<ol>
+						<li><pre><code>cd ..</code></pre></li>
+						<li><pre><code>ls</code></pre></li>
+						<li><pre><code>cd usr/etc</code></pre></li>
+						<li><pre><code>ls</code></pre></li>
+						<li><pre><code>rm -rf motd</code></pre></li>
+						<li><pre><code>Open new terminal, and see the termux terminal is totally clear.</code></pre></li>
+					</ol>
+				    <p>With the help of these commands, whatever text comes on the welcome screen of Termux will not come, you can see it by open new session or re-open the Termux.</p>
 
-export  $initHighlight;
-					    </code>
-				    </pre>
-				    <h3 class="mt-5 mb-3">Typography</h3>
-				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				    <h3 class="mt-5 mb-3">How to Insert ASCII txt in your termux terminal</h3>
+					<p>We have to type some commands to insert the ASCII text in the Termux terminal</p>
+					<p>Open new session in termux and type following commands :-</p>
+					<ol>
+						<li><pre><code>pkg install figlet</code></pre></li>
+						<li><pre><code>pkg install nano</code></pre></li>
+						<li><pre><code>again new session open & type -</code></pre></li>
+						<li><pre><code>cd..</code></pre></li>
+						<li><pre><code>ls</code></pre></li>
+						<li><pre><code>cd usr</code></pre></li>
+						<li><pre><code>ls</code></pre></li>
+						<li><pre><code>cd etc</code></pre></li>
+						<li><pre><code>ls</code></pre></li>
+						<li><pre><code>nano bash.bashrc</code></pre></li>
+					</ol>
 				    <h5 class="my-3">Bullet Points:</h5>
 				    <ul class="mb-5">
 					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
