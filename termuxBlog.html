@@ -424,7 +424,13 @@
     <!-- Javascript -->          
     <script src="assets/plugins/jquery-3.3.1.min.js"></script>
     <script src="assets/plugins/popper.min.js"></script> 
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+	<script>
+		$(document).keydown(function (event) {
+			if (event.keyCode == 123)
+				return false;
+		});
+	</script>
     
     <!-- Page Specific JS -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
