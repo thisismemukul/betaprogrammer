@@ -9,6 +9,7 @@ function mostrar(e) {
         document.body.style.background = 'rgb(10, 10, 10)';
         document.querySelector('#userName').style.color = '#fff';
         document.querySelector('#tagLine').style.color = '#fff';
+        document.querySelector('.topnav').style.color = '#fff';
 
 
         let links = document.querySelectorAll('.link');
@@ -34,6 +35,7 @@ function mostrar(e) {
         document.body.style.background = 'rgb(243, 242, 242)';
         document.querySelector('#userName').style.color = 'rgb(99, 99, 99)';
         document.querySelector('#tagLine').style.color = 'rgb(99, 99, 99)';
+        document.querySelector('.topnav').style.color = 'rgb(99, 99, 99)';
 
         let links = document.querySelectorAll('.link');
         // Pega apenas o primeiro do array

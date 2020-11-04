@@ -13,9 +13,57 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
     <script type="text/javascript" src="assets/js/script.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+            text-align: center;
+            position: relative;
+            max-width: 100%;
+            padding: 10px 60px;
+            vertical-align: baseline;
+            background-color:  rgb(66, 110, 255);
+        }
+        
+        .topnav h2 {
+            text-align: center;
+            color: #f2f2f2;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .button {
+            border: none;
+            border-radius: 3px;
+            color:  rgb(66, 110, 255);
+            display: inline-block;
+            font-size: 16px;
+            margin: .2em .5em;
+            padding: 6px 10px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            background-color:  rgb(66, 110, 255); 
+        }
+        .button1 {
+            background-color:  rgb(66, 110, 255); 
+            color: black; 
+            border: 2px solid white;
+        }
+        .button1:hover {
+            background-color: white;
+            color: rgb(66, 110, 255);
+        }
+
+
+    </style>
 </head>
 
 <body>
+    <div class="topnav">
+        <h2>Don't Miss Any Course Join Our Telegram Channel</h2><a href="https://Telegram.me/betaprogrammer" class="button button1">Join Now</a>
+    </div>
     <i onclick="mostrar(this)" class="fa fa-moon-o fa-2x night_mode"></i>
 
     <img id="userPhoto" src="assets/images/profile.png" alt="User Photo">
